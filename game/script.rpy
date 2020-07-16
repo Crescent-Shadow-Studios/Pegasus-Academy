@@ -11,6 +11,7 @@
 define hm = Character("Headmaster", color="#000000")
 define s_r = Character("Stranger")
 define r = Character("Riot")
+define yp = Character("You")
 
 label start:
     scene marble courtyard crowd
@@ -30,4 +31,15 @@ label start:
     "A stranger leans in to your side."
     show stranger riot
     s_r "That guy's really annoying. I hear he once talked for 6 hours and forced the entire school to listen to him."
+    menu:
+        "\"I'm sure, but I'm actually kind of interested.\"":
+            yp "That sounds like it sucked, but I'm actually kind of interested in what he's saying right now."
+            yp "You should probably pay attention to what he's saying as well."
+        "\"Let's talk after the speech in case we miss something important.\"":
+            yp "Yeah I'd hate to be there. Though, we should talk after the speech; I don't want to miss something important."
+            yp "You should probably focus on what he's saying. I mean it is a welcoming speech..."
+        "\"Did he really? That's insane.\"":
+            yp "Did he really?"
+            yp "That's insane!"
+            yp "I'm bored of this speech already."
     pause

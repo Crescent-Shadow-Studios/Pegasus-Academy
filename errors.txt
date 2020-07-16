@@ -2,9 +2,9 @@
 errors listed below, and try again.
 
 
-File "game/script.rpy", line 13: expected '=' not found.
-    define r
-            ^
+File "game/script.rpy", line 41: Line is followed by a block, despite not being a menu choice. Did you forget a colon at the end of the line?
+    "\"Did he really? That's insane.\""
+                                       ^
 
 Ren'Py Version: Ren'Py 7.3.5.606
-Thu Jul 16 16:38:18 2020
+Thu Jul 16 16:58:13 2020
