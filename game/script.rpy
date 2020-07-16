@@ -10,6 +10,7 @@
 
 define hm = Character("Headmaster", color="#000000")
 define s_r = Character("Stranger")
+define r = Character("Riot")
 
 label start:
     scene marble courtyard crowd
@@ -27,6 +28,6 @@ label start:
     pause
     scene marble courtyard crowd close
     "A stranger leans in to your side."
-    show stranger
+    show stranger riot
     s_r "That guy's really annoying. I hear he once talked for 6 hours and forced the entire school to listen to him."
     pause
