@@ -14,6 +14,8 @@ define r = Character("Riot")
 define yp = Character("You")
 
 label start:
+    $ r_bond = 0
+
     scene marble courtyard crowd
     pause
     "You're anxious about finally being in this new school."
@@ -35,11 +37,15 @@ label start:
         "\"I'm sure, but I'm actually kind of interested.\"":
             yp "That sounds like it sucked, but I'm actually kind of interested in what he's saying right now."
             yp "You should probably pay attention to what he's saying as well."
+            $ r_bond -= 1
         "\"Let's talk after the speech in case we miss something important.\"":
             yp "Yeah I'd hate to be there. Though, we should talk after the speech; I don't want to miss something important."
             yp "You should probably focus on what he's saying. I mean it is a welcoming speech..."
         "\"Did he really? That's insane.\"":
             yp "Did he really?"
             yp "That's insane!"
-            yp "I'm bored of this speech already."
+            yp "I mean I'm bored of this speech already."
+            $ r_bond += 1
+        
     pause
+return
